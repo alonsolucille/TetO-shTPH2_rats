@@ -1,0 +1,83 @@
+Project leader: Marion Rivalan
+Author: Lucille Alonso
+Funding: DFG (RI 2474/2-1)
+Results are published in the preprint "Poor decision making and sociability impairment following central serotonin reduction in inducible TPH2-knockdown rats" doi: 10.1101/2024.01.06.574479
+
+The folder contains :
+1-the R scripts for the analysis :
+-teto.Rproj
+-teto_fig_filter_5ht.R for performing the statistical analyses and figures 2, 3, and 4 of the manuscript and supplemental figures S1, S2, and S3.
+2-the data :
+-teto_all_16082021.csv which are all the behavioral data
+-serotonin_19052023.csv which are all the serotonin (hplc) data
+
+1. Content of "teto_all_16082021.csv". 
+This file was assembled manually with the information about the individuals and the parameters extracted from the experiments:
+
+Column label		Information
+---------------------------------------
+rat			the animal number
+batch			the batch of the animals
+genotype		the line of the animals
+treatment		the treatment received
+group			the experimental group
+groupx			the experimental subgroup
+dm			the animal decision making group
+RGT			the RGT score = mean preference for advantageous options in the last 20min of the RGT test
+RGT10			the preference for advantageous options during 0-10min of the RGT test
+RGT20			the preference for advantageous options during 10-20min of the RGT test
+RGT30			the preference for advantageous options during 20-30min of the RGT test
+RGT40			the preference for advantageous options during 30-40min of the RGT test
+RGT50			the preference for advantageous options during 40-50min of the RGT test
+RGT60			the preference for advantageous options during 50-60min of the RGT test
+latency			the mean latency to reach the feeder after a choice in the RGT test.
+REV			the REV score = mean preference for advantageous options in the last 20min of the reversed-RGT test
+flexibility_index	the flexibility score = mean preference for the preferred options in the RGT test in the last 20min of the reversed-RGT test. [for PDM animal and some INT animals the score flexibility score = 100 - REV-score]
+REV10			the preference for advantageous options during 0-10min of the reversed-RGT test
+REV20			the preference for advantageous options during 10-20min of the RGT test
+REV30			the preference for advantageous options during 20-30min of the RGT test
+REV40			the preference for advantageous options during 30-40min of the RGT test
+REV50			the preference for advantageous options during 40-50min of the RGT test
+REV60			the preference for advantageous options during 50-60min of the RGT test
+Do Reverse		the animal flexibility group
+rat			the animal number
+P100			the preference for large reward option at probability 100% of the PDT test [mean of 2 stable sessions]
+P66			the preference for large reward option at probability 66% of the PDT test [mean of 2 stable sessions]
+P33			the preference for large reward option at probability 33% of the PDT test [mean of 2 stable sessions]
+P20			the preference for large reward option at probability 20% of the PDT test [mean of 2 stable sessions]
+P14			the preference for large reward option at probability 14% of the PDT test [mean of 2 stable sessions]
+P9			the preference for large reward option at probability 9% of the PDT test [mean of 2 stable sessions]
+normAUC			the area under the curve of the PDT test
+rat			the animal number
+hab			the time spent in interaction with empty cage during the first 5min of habituation
+E1			the time spent in interaction with cage containing unfamiliar intruder during the 5min of encounter1
+E2			the time spent in interaction with cage containing same intruder during the 5min of encounter2
+E3			the time spent in interaction with cage containing same intruder during the 5min of encounter3
+Soc pref		the ratio of interaction time in E1 and hab
+STM			the ratio of interaction time in E3 and E1
+STM1			the ratio of interaction time in E1 and E2
+STM2			the ratio of interaction time in E2 and E3
+odor			the preference for the odor dish in the odor test
+
+2. Content of "serotonin_19052023.csv".
+This file was assembled manually with the information about the individuals and the data of the HPLC measurements:
+
+Column label		Information
+---------------------------------------
+batch			Batch number
+zone			Brain region
+rat			Rat number
+genotype		Rat line
+treatment		Treatment received
+group			Experimental group
+groupx			Experimental subgroup
+Weight			Sample weight in mg
+V_LysB			Volume of buffer in ul
+5HT			Serotonin concentration in pg/mg
+5HIAA			Serotonin metabolite (5HIAA) concentration in pg/mg
+TRP			Tryptophane concentration in pg/mg
+TYR			Tyrosine concentration in pg/mg
+treat.dur.d		Duration of treatment in days
+treat.dur.w		Duration of treatment in weeks
+ratio.5HIAA.TRP		Ratio of 5HIAA/TRP
+expe.group		Batches run together
