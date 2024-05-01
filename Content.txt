@@ -3,10 +3,11 @@ Author: Lucille Alonso
 Funding: DFG (RI 2474/2-1)
 Results are published in the preprint "Poor decision making and sociability impairment following central serotonin reduction in inducible TPH2-knockdown rats" doi: 10.1101/2024.01.06.574479
 
-The folder contains :
+The folder Data and scripts contains :
 1-the R scripts for the analysis :
 -teto.Rproj
--teto_fig_filter_5ht.R for performing the statistical analyses and figures 2, 3, and 4 of the manuscript and supplemental figures S1, S2, and S3.
+-teto_fig_filter_5ht.R for performing the statistical analyses and figures 2, 3, 4 and 5 of the manuscript and supplemental figures S1, S2, and S3
+-renv folder and renv.lock for loading the analysis R environment.
 2-the data :
 -teto_all_16082021.csv which are all the behavioral data
 -serotonin_19052023.csv which are all the serotonin (hplc) data
@@ -81,3 +82,5 @@ treat.dur.d		Duration of treatment in days
 treat.dur.w		Duration of treatment in weeks
 ratio.5HIAA.TRP		Ratio of 5HIAA/TRP
 expe.group		Batches run together
+
+The Folder Figures contains the output figures of the scripts and the Figure 1
